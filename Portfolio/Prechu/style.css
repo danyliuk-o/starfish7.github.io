@@ -1,0 +1,189 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative
+}
+
+.container:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.logo {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 50px
+}
+
+.logo:before {
+    content: "“";
+    display: inline-block;
+    background-color: #5094f2;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    overflow: hidden;
+    margin-bottom: -9px;
+    line-height: 1.1em;
+    margin-right: 10px
+}
+
+.nav {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-size: 0
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 15px
+}
+
+.nav li a {
+    display: block;
+    color: gray;
+    text-decoration: none;
+    padding: 20px 5px
+}
+
+.nav li a:hover {
+    padding-bottom: 18px;
+    border-bottom: 2px solid #508bdd
+}
+
+.banner {
+    background-color: gray;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover;
+    height: 579px;
+    margin-bottom: 50px;
+    min-width: 1000px
+}
+
+.banner img {
+    position: absolute;
+    top: 38px;
+    left: 50px
+}
+
+.banner .info {
+    position: absolute;
+    left: 55%;
+    top: 150px
+}
+
+.banner p {
+    font-size: 26px;
+    line-height: 2em;
+    width: 340px
+}
+
+.banner a {
+    background-color: #5094f2;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 8px 8px 40px;
+    border-radius: 3px;
+    background-image: url(img/shape-2.png);
+    background-repeat: no-repeat;
+    background-position: 5px
+}
+
+.c {
+    width: 33.333333333333333333%;
+    text-align: center
+}
+
+.c p {
+    font-size: 14px;
+    font-family: "Myriad  Pro";
+    color: #909090
+}
+
+.c:before {
+    content: "";
+    display: block;
+    width: 186px;
+    height: 186px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.contary {
+    margin-bottom: 70px
+}
+
+.monitor {
+    margin: 0 auto
+}
+
+.monitor:before {
+    background-color: red;
+    background-image: url(img/monitor.png)
+}
+
+.pencil {
+    float: left
+}
+
+.pencil:before {
+    background-color: #508bdd;
+    background-image: url(img/pencil.png)
+}
+
+.basket {
+    float: right
+}
+
+.basket:before {
+    background-color: green;
+    background-image: url(img/basket.png)
+}
+
+.cart {
+    float: left;
+    margin-right: 50px
+}
+
+.bullet h2 {
+    padding-left: 80px
+}
+
+.bullet p {
+    font-family: "Myriad  Pro";
+    line-height: 36px;
+    color: #909090
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #000;
+    padding: 40px;
+    margin-top: 40px
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none
+}
+
+.footer a:hover {
+    text-decoration: underline
+}
