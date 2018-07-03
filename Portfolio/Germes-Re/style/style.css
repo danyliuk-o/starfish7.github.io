@@ -1,0 +1,606 @@
+* {
+    box-sizing: border-box;
+    font-family: "Fira Sans";
+    transition: all .2s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+
+
+/* Page 1 */
+
+
+/* .page1 {
+    height: 100vh;
+    max-width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.46),
+    rgba(0, 0, 0, 0.46)),
+    url('../images/bg_kitchen.jpg'),
+    linear-gradient(#000, #fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+
+.page1 {
+    height: 100vh;
+    max-width: 100%;
+    background: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    }
+
+.salons {
+    display: flex;
+    cursor: pointer;
+}
+
+.salons .marker {
+    margin-right: 37px;
+}
+
+.salons-ua {
+    color: #da1e32;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.phones a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.phones a:hover {
+    color: #da1e32;
+}
+
+.quality-kitchens {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    width: 33%;
+}
+
+.quality-kitchens #old-price {
+    color: #a3a3a3;
+    text-decoration: line-through;
+}
+
+.quality-kitchens #new-price {
+    color: #fff000;
+}
+
+.you-was {
+    color: #fff000;
+
+    font-size: 2.7em;
+    text-align: center;
+    font-weight: bold;
+
+    max-height: 25vh;
+    width: 100%;
+
+}
+
+.discount {
+    color: #ffffff;
+    font-size: 2.5em;
+    line-height: 58.42px;
+    text-align: center;
+    font-weight: bold;
+    max-height: 25%;
+
+    max-width: 1200px;
+}
+
+.discount span {
+    color: #000000;
+    padding: 8px;
+    background-color: #fff000;
+}
+
+#first-form .enter-the-tel {
+    display: inline-block;
+    font-size: 23px;
+    width: 96px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+#first-form .tel-form {
+    width: 311px;
+    height: 50px;
+    font-size: 23px;
+    color: #727272;
+    padding: 5px 20px;
+}
+
+#first-form .phone-form-send {
+    background-color: #da1e32;
+    padding: 11px 25px;
+    color: #fff;
+    font-size: 23px;
+    border: 0px;
+}
+
+#first-form .phone-form-send:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffff00!important;
+}
+
+.three-days {
+    display: inline-block;
+    width: 242px;
+    font-size: 33px;
+    color: #fff000;
+    font-weight: bold;
+    line-height: 43.16px;
+    vertical-align: middle;
+}
+
+#CDT {
+    display: inline-block;
+}
+
+
+
+
+
+/* Page 2 */
+
+.page2 {
+    background-color: #fe182f;
+    color: #ffffff;
+}
+
+.works {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.works img {
+    width: 100%;
+}
+
+.our-works {
+    font-size: 69px;
+    font-weight: bold;
+    max-width: 1068px;
+    margin: 82px auto 34px auto;
+}
+
+.free-cons {
+    font-size: 30px;
+    margin: 39px auto 17px auto;
+}
+
+#second-form {
+    margin: 10px auto 52px auto;
+}
+
+#second-form .tel-form {
+    height: 40px;
+    font-size: 20px;
+}
+
+#second-form .phone-form-send {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 22px;
+}
+
+#second-form p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Page 3 */
+
+.page3 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url(../images/bg-kitchen-second.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.project-calculation {
+    margin: 83px auto 0 auto;
+
+    font-size: 69px;
+    font-weight: 700;
+    max-width: 1140px;
+}
+
+.project-calculation span {
+    color: #ffd800;
+}
+
+.radio h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff0000;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* radio-buttons */
+
+.radio .radio-btn {
+    display: none;
+}
+
+.radio i {
+    width: 33px;
+    height: 32px;
+    border: 4px solid #ffffff;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio span {
+    font-size: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-family: "Fira Sans - Ultra Light";
+    font-weight: 400;
+}
+
+.radio label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio input[type="radio"]+i {
+    border-radius: 50%;
+}
+
+.radio label i:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    right: 7px;
+    left: 7px;
+    background: #ed0011;
+    border-radius: 6px;
+    transform: scale(0);
+    transition: .4s;
+}
+
+.radio input[type="radio"]+i:before {
+    border-radius: 50%;
+}
+
+.radio input:checked+i:before {
+    transform: scale(1);
+}
+
+
+
+
+/* end radio-btn */
+
+.radio-row {
+    margin: 43px auto;
+
+}
+
+.radio-row h3 {
+    margin-bottom: 19px;
+}
+
+.radio-row label {
+    margin: 0 20px;
+}
+
+.sketch {
+    display: flex;
+    justify-content: space-between;
+    border: #ffd800 dashed 2px;
+    padding: 23px 28px 18px 20px;
+    max-width: 546px;
+    margin: 0 auto;
+}
+
+.sketch p {
+    text-align: left;
+    margin: 0 0 0 55px;
+    font-size: 23px;
+}
+
+.data {
+    margin: 43px auto 0 auto;
+
+}
+
+.data p {
+    font-size: 18px;
+}
+
+.data input {
+    height: 40px;
+    width: 240px;
+    font-size: 20px;
+}
+
+.phone-btn-send {
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    padding: 8px 24px 22px 24px;
+}
+
+
+@media screen and (max-width: 1447px) {
+
+
+    .discount {
+        font-size: 30px;
+        /* margin: 1% auto; */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .marker {
+        display: none;
+    }
+    .quality-kitchens {
+        font-size: 21px;
+    }
+    .you-was {
+        font-size: 2.4em;
+    }
+    .radio span {
+        font-size: 32px;
+    }
+}
+
+
+@media only screen and (max-width: 1122px) {
+
+    .quality-kitchens {
+        display: block !important;
+    }
+    .salons .marker {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .salons-ua {
+        display: none;
+    }
+    .phones a {
+        font-size: 25px;
+    }
+    .quality-kitchens {
+        font-size: 17px;
+    }
+    .you-was {
+        font-size: 1.8em;
+    }
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .salons-ua {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quality-kitchens {
+        font-size: 20px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    .you-was {
+        font-size: 1.6em;
+    }
+    .discount {
+        font-size: 1.5em;
+        line-height: 37.42px;
+        margin: 10px auto;
+    }
+
+    .three-days {
+        font-size: 29px;
+    }
+
+    #first-form .tel-form {
+        font-size: 20px;
+        height: 38px;
+        width: 225px;
+        padding: 11px 18px;
+    }
+    .enter-the-tel {
+        font-size: 18px;
+    }
+    .three-days {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #first-form .phone-form-send {
+        font-size: 14px;
+    }
+
+    .project-calculation {
+        font-size: 44px;
+    }
+
+    .radio-row label {
+        margin: 0px 15px;
+        display: block;
+        margin-bottom: 20px;
+        text-align: left;
+        padding-left: 15%;
+    }
+    .our-works {
+        font-size: 52px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .page1 .wrapper {
+        width: 90%;
+    }
+    .works {
+        width: 95%;
+    }
+    #second-form .phone-form-send {
+        margin-bottom: 20px;
+    }
+    #second-form .tel-form {
+        margin-bottom: 15px;
+    }
+    header {
+        display: block;
+        justify-content: space-between;
+    }
+    .our-works {
+        font-size: 33px;
+        margin: 40px auto 34px auto;
+    }
+    .free-cons {
+        font-size: 24px;
+    }
+    .radio span {
+        font-size: 25px;
+    }
+    .works a.btnPaginationNext.next {
+        top: 30%;
+    }
+    .works a.btnPaginationPrevious.prev {
+        top: 30%;
+    }
+    .project-calculation {
+        margin: 30px auto 0 auto;
+        font-size: 36px;
+        font-weight: 700;
+        max-width: 1140px;
+        line-height: 42px;
+    }
+    .salons {
+        display: none;
+    }
+    #second-form {
+        margin: 10px auto 30px auto;
+    }
+    .radio-row label {
+        margin: 0px 15px;
+        display: block;
+        margin-bottom: 20px;
+        text-align: left;
+        padding-left: 15%;
+    }
+    .sketch {
+        width: 80%;
+    }
+    .page1 {
+        height: 100%;
+    }
+    .page1 .wrapper {
+        height: 100%;
+    }
+    .quality-kitchens {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .you-was {
+        font-size: 28px;
+        width: 100%;
+        max-height: 100%;
+        margin: 30px auto 30px auto;
+    }
+    .three-days {
+        display: inline-block;
+        width: 100%;
+        font-size: 28px;
+        color: #fff000;
+        font-weight: bold;
+        line-height: 34.16px;
+        vertical-align: middle;
+    }
+    #CDT {
+        font-size: 30px!important;
+    }
+    #CDT .number {
+        min-width: 55px!important;
+        height: 60px!important;
+        line-height: 60px!important;
+        padding: 0 10px!important;
+    }
+    #CDT .number-wrapper {
+        margin: 5px;
+    }
+    .discount {
+        font-size: 25px;
+        line-height: 40px;
+        margin: 30px auto;
+    }
+    #first-form .tel-form {
+        width: 100%;
+    }
+    .countdown-block {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #first-form .enter-the-tel {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #first-form .phone-form-send {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background: #3d385a;
+}
+
+.section {
+    perspective: 1000px;
+}
+
+.container {
+    width: 680px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    transition: 1.5s;
+    transform: rotateX(50deg) rotateZ(-40deg) rotateY(5deg);
+    transform-style: preserve-3d;
+}
+
+.container-origin {
+    transform: rotate(0);
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    width: 170px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateZ(15px);
+}
+
+.card a:active {
+    color: #ffb300;
+}
+
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate(0);
+}
+/* параметры визуального элемента эффекта */
+.effekt {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+/* абсолютно круглый */
+  border-radius: 50%;
+/* Увеличение или уменьшение размера элемента */
+  transform: scale(0);
+/* располагаем выше других объектов веб-страницы */
+  z-index:9999;
+/* цвет фона элемента */
+  background: rgba(52, 152, 219,.7);
+/* не прозрачный */
+  opacity: 1;
+}
+/* имя, длительность и изменение скорости анимации */
+.effekt.replay {
+  -webkit-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -o-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+  animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+
+
+
+keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-moz-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-ms-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-o-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
