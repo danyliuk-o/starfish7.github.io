@@ -10,6 +10,7 @@ header {
     border: 3px solid red;
     border-radius: 5px;
     display: flex;
+    position: relative;
 }
 
 #logout {
@@ -39,7 +40,31 @@ header {
     top: 15px;
 }
 
-.wrapper {
+.help {
+    display: block !important;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: 3px solid red;
+    max-width: 300px;
+    max-height: 150px;
+    padding: 20px;
+    margin: auto;
+    opacity: 0.5;
+    text-align: center;
+
+}
+
+.help span {
+    display: block;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+.main {
     width: 100%;
     height: calc(100% - 100px);
     position: fixed;
@@ -71,6 +96,7 @@ input[type="password"] {
     padding-left: 10px;
 }
 
+
 #text-block {
 
     background-color: red;
@@ -93,49 +119,8 @@ input[type="password"] {
     cursor: pointer;
 }
 
-.help {
-    display: none;
-}
-
-form:hover + .help {
-    display: block !important;
-    position: absolute;
-    top: 25px;
-    border: 3px solid red;
-    max-width: 300px;
-    max-height: 150px;
-    padding: 20px;
-    margin: auto;
-    opacity: 0.25;
-
-}
-
-.help span {
-    display: block;
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
 
 
-/* @media (max-width: 1920px) {
-    .container-form {
-        margin: 120px auto;
-    }
-}
-
-@media (max-height: 615px) {
-    .container-form {
-        margin: 35px auto;
-        padding: 35px;
-
-    }
-}
 
 
-@media (max-height: 520px) {
-    .container-form {
-        padding: 20px;
-    }
-} */
 

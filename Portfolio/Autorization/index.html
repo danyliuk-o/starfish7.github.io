@@ -12,15 +12,19 @@
         <button id="logout">Header
         </button>
         <div class="user-login">User</div>
+        <div class="help">
+            <span>User: User</span>
+            <span>Password: pass123</span>
+        </div>
     </header>
-    <div class="wrapper">
+    <div class="main">
         <div class="container-form">
             <form name="autorization">
                 <div class="block-input">
-                    <input type="text" id="login" placeholder="Username">
+                    <input type="text" id="login" placeholder="Username" data-title="User">
                 </div>
                 <div class="block-input">
-                    <input type="password" id="pass" placeholder="Password">
+                    <input type="password" id="pass" placeholder="Password" data-title="pass123">
                 </div>
                 <div class="block-input">
                     <span id="text-block">Enter data</span>
@@ -29,12 +33,7 @@
                     <input type="submit" value="Login" class="btn-submit">
                 </div>
             </form>
-
         </div>
-        <div class="help">
-                <span>User: User</span>
-                <span>Password: pass123</span>
-            </div>
     </div>
     <script src="js/script.js"></script>
 </body>
