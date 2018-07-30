@@ -1,0 +1,415 @@
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            display: flex;
+        }
+
+        header {
+            background: #c5c5c5;
+            padding: 22px 0;
+        }
+
+        .header-container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header-container a {
+            color: #000;
+            font-size: 16px;
+            margin-right: 63px;
+            padding: 27px 6px;
+        }
+
+        .header-container a:hover {
+            background: #ffea00;
+        }
+
+        #menu-checkbox {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        nav {
+            margin-top: 20px
+        }
+
+        .top-slide {
+            background-image: url('../img/slider_bg.jpg');
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            padding-top: 120px;
+            padding-bottom: 305px;
+            width: 100%;
+        }
+
+        .specialize-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .specialize-container h3 {
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+
+        .specialize-container p {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            width: 250px;
+            height: 287px;
+        }
+
+        .top-card {
+            height: 201px;
+            background-color: #ffea00;
+        }
+
+        .top-card .card-img {
+            margin: auto;
+            height: 100px;
+            position: relative;
+            top: 30px;
+        }
+
+        .top-card p {
+            position: relative;
+            font-size: 20px;
+            letter-spacing: 2px;
+            top: 40px;
+        }
+
+        .bottom-card p {
+            height: 86px;
+        }
+
+        .bottom-card .first-p {
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .bottom-card .second-p {
+            font-size: 13px;
+            color: #ffffff;
+            position: relative;
+            top: 20px;
+        }
+
+        .bottom-card {
+            background: #414146;
+            position: relative;
+            top: -28px;
+        }
+
+        .specialize-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .top-container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .top-container p {
+            max-width: 380px;
+            font-size: 24px;
+            background-color: #414146;
+            color: #fff;
+            padding: 0 13px;
+        }
+
+        .top-slide h2 {
+            background: #ffea00;
+            display: inline;
+            font-size: 54px;
+        }
+
+        .portfolio {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            min-height: 800px;
+        }
+
+        .portfolio h4 {
+            margin-top: 40px;
+            background: #424147;
+            padding: 8px 28px;
+            display: inline-block;
+            color: #ffea00;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .portfolio p {
+            color: #424146;
+            font-size: 16px;
+        }
+
+        .toggles button {
+            text-transform: uppercase;
+            color: #424146;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            margin: 20px 5px;
+        }
+
+        .toggles button:hover {
+            text-decoration: underline;
+        }
+
+        .toggles button:after {
+            content: ' / ';
+        }
+
+        .toggles button:last-child:after {
+            content: '';
+        }
+
+        .posts {
+            width: 90%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 0 auto;
+        }
+
+
+        .brand-slider {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            min-height: 500px;
+            margin-bottom: 100px;
+        }
+
+        .brand-slider h4 {
+            margin-top: 40px;
+            background: #424147;
+            padding: 8px 28px;
+            display: inline-block;
+            color: #ffea00;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .brand-slider p {
+            color: #424146;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .brand-slider .owl-carousel:hover {
+            cursor: pointer;
+        }
+
+
+
+        footer {
+            color: white;
+            background-color: #414146;
+            padding: 30px 0;
+        }
+
+        .footer-container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            font-family: "Century Gothic";
+        }
+
+        .footer-container .about-us {
+            width: 30%;
+        }
+
+        .footer-container .about-us p {
+            font-size: 13px;
+        }
+
+        .footer-container .about-us a {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px;
+            font-size: 15px;
+            border-bottom: 2px solid #ffea00;
+            text-decoration: none;
+            margin: 30px 0 40px 0;
+            display: inline-block;
+        }
+
+        .images {
+            margin-top: 10px;
+        }
+
+        .tweets {
+            line-height: 30px;
+            width: 32%;
+        }
+
+
+        .tweets p {
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        .tweets p span {
+            color: #ffea00;
+        }
+
+        .tweets .social {
+            margin-top: 70px;
+        }
+
+        .tweets .social h4 {
+            display: inline-block;
+            position: relative;
+            top: -10px;
+        }
+
+        .contacts {
+            font-size: 13px;
+            width: 20%;
+        }
+
+        .contacts img {
+            margin-right: 10px;
+        }
+
+        .contact-block {
+            margin-top: 30px;
+            line-height: 18px;
+        }
+
+        .contact-text {
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+        }
+
+        .word-phone {
+            display: inline-block;
+            height: 100%;
+            vertical-align: top;
+        }
+
+        .phones {
+            display: inline-block;
+        }
+
+        .mail .mail-text span {
+            color: #ffea00;
+        }
+
+
+        @media screen and (max-width: 878px) {
+            .header-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .header-container a {
+
+                padding: 10px 6px;
+            }
+            .main-menu {
+                display: none;
+            }
+            .main-menu li {
+                width: 100%;
+                font-size: 12px;
+            }
+
+            .main-menu li {
+                display: block;
+                padding: 8px;
+            }
+
+            .toggle-button {
+                text-align: center;
+                display: block;
+                cursor: pointer;
+                color: #000;
+            }
+            .toggle-button:after {
+                content: attr(data-open);
+                display: block;
+            }
+
+            #menu-checkbox:checked+nav[role="navigation"] .main-menu {
+                display: block;
+            }
+            #menu-checkbox:checked+nav[role="navigation"] .toggle-button:after {
+                content: attr(data-close);
+            }
+            .header-container a {
+                margin-right: -65px;
+            }
+            .main-menu {
+                position: relative;
+                top: 30px;
+
+            }
+            .contact-text {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+        }
+
+        @media screen and (max-width: 420px) {
+
+
+            .top-slide {
+                padding-top: 68px;
+                padding-bottom: 100px;
+                text-align: center;
+            }
+
+            .top-slide h2 {
+
+                font-size: 32px;
+            }
+            .top-slide p {
+                font-size: 20px;
+            }
+            .specialize-container p {
+                font-size: 18px;
+            }
+
+            .specialize-cards {
+                justify-content: space-around;
+            }
+
+            .posts {
+                width: 90%;
+                display: grid;
+                grid-template-columns: auto;
+                margin: 0 auto;
+            }
+
+            .post img {
+                max-width: 300px;
+            }
+        }
