@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Gotham Black Regular";
+    src: url("../fonts/Gotham/Gotham Black Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

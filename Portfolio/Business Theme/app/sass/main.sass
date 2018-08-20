@@ -1,0 +1,793 @@
+
+$color1: #7b7b7b
+$bgColorBlue: #709dca
+$bgColorOrange: #ffc155
+$hoverColor: #394b50
+$oftenWidth: 1160px
+
+@mixin h2style
+    font-size: 30px
+    font-weight: 900
+    font-family: "Gotham Black Regular"
+    text-transform: uppercase
+    @content
+
+@mixin hov
+    background: $hoverColor
+    transition: 1s
+    cursor: pointer
+    @content
+
+@mixin link
+    font-size: 14px
+    text-transform: uppercase
+    border-radius: 5px
+    background-color: $bgColorOrange
+    text-decoration: none
+    color: #fff
+    padding: 15px 30px
+    border: 1px solid #e7ad48
+    @content
+
+@mixin nav
+    a
+        color: #868686
+        text-transform: uppercase
+        font-family: Lato, sans-serif
+        text-decoration: none
+        padding: 5px 10px
+        font-size: 14px
+        font-weight: 400
+        color: #868686
+        position: relative
+        &:before
+            content: ""
+            position: absolute
+            z-index: -1
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: $bgColorOrange
+            transform: scaleX(0)
+            transform-origin: 50%
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out
+            color: #fff
+            padding: 6px 15px
+            border-radius: 4px
+        &:hover, &:focus, &:active
+            color: white;
+        &:hover:before, &:focus:before, &:active:before
+            transform: scaleX(1)
+    @content
+
+body
+    margin: 0
+    padding: 0
+    font-family: "Open Sans", sans-serif
+    background-color: #fff
+
+*
+    margin: 0
+    box-sizing: border-box
+
+a
+    transition: 0.5s all
+
+ul
+    padding: 0
+
+.container
+    max-width: 1190px
+    margin: 0 auto
+
+header
+    padding: 2em 0
+    .header-container
+        margin: 0 auto
+        padding: 0 15px
+        .nav-top
+            float: right
+            ul
+                display: flex
+                justify-content: space-around
+                margin-top: 15px
+                li
+                    list-style: none
+                    display: inline-block
+                    @include nav
+
+        .logo
+            float: left
+        &:after
+            content: ''
+            display: block
+            clear: both
+.banner
+    width: 100%
+    background-color: $bgColorBlue
+    padding-top: 110px
+    padding-bottom: 350px
+
+    .banner-content
+        margin: 0 auto
+        text-align: center
+        // position: relative
+        .banner-text
+            color: #fff
+            max-width: 90%
+            margin: 0 auto
+
+            h1
+                font-size: 35px
+                font-weight: 400
+                text-transform: uppercase
+                font-family: "Gotham Black Regular"
+                letter-spacing: -0.88px
+            p
+                font-size: 16px
+        .banner-form
+            padding: 33px 0
+            form
+                padding: 0 20px
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                flex-wrap: wrap
+                .input-wrapper
+                    position: relative
+                    margin: 3px
+                    order: 0
+                    flex-grow: 1
+                    flex-basis: 200px
+                    height: 48px
+                    input, button
+                        width: 100%
+                        height: 100%
+                        border-radius: 5px
+                    input
+                        padding: 7px 25px
+                    &.input-icon
+                        &:before
+                            content: ""
+                            display: block
+                            position: absolute
+                            width: 16px
+                            height: 16px
+                            background-size: cover
+                            top: 50%
+                            margin-top: -7.5px
+                            left: 5px
+                        &.name:before
+                            background-image: url('../img/name_icon.png')
+                        &.email:before
+                            background-image: url('../img/email_icon.png')
+                        &.phone:before
+                            background-image: url('../img/phone_icon.png')
+                    button
+                        background-color: $bgColorOrange
+                        text-transform: uppercase
+                        font-size: 14px
+                        font-weight: 400
+                        color: #ffffff
+                        border: none
+                        &:hover
+                            @include hov
+                                font-size: 16px
+                        &:not(:hover)
+                            transition: 1s
+        .banner-slider
+            position: relative
+            .slider-tv
+                background: url('../img/tv.png') no-repeat 0px 0px
+                background-size: 100% 100%
+                width: 60%
+                min-height: 380px
+                margin: 0 auto
+                position: absolute
+                left: 260px
+                top: 50px
+                .sl-slide
+                    img
+                        width: 70%
+                        position: relative
+                        top: 10px
+
+.services-container
+    padding: 200px 0
+    .services-title
+        line-height: 22px
+        color: #394b50
+        margin: 0 auto 30px auto
+        text-align: center
+        h2
+            @include h2style
+                letter-spacing: -0.75px
+        p
+            font-size: 16px
+    .services-content
+        margin: 0 auto
+        display: flex
+        .service-column
+            width: 100%
+            padding: 0 15px
+            .service
+                display: flex
+                margin-top: 4em
+                .icon-block
+                    margin-right: 3%
+                    .service-icon
+                        width: 70px
+                        height: 70px
+                .service-text
+                    h4
+                        font-family: Lato
+                        color: #394b50
+                        font-size: 16px
+                        font-weight: 900
+                        text-transform: uppercase
+                        margin-bottom: 20px
+                    p
+                        font-size: 13px
+                        color: #7b7b7b
+                        line-height: 22px
+                .icon1
+                    background: url(../img/img-sprite.png) no-repeat -540px 0px
+                    &:hover
+                        background: url(../img/img-sprite.png) no-repeat -540px -70px
+                .icon2
+                    background: url(../img/img-sprite.png) no-repeat -610px 0px
+                    &:hover
+                        background: url(../img/img-sprite.png) no-repeat -610px -70px
+                .icon3
+                    background: url(../img/img-sprite.png) no-repeat -680px 0px
+                    &:hover
+                        background: url(../img/img-sprite.png) no-repeat -680px -70px
+                .icon4
+                    background: url(../img/img-sprite.png) no-repeat -750px 0px
+                    &:hover
+                        background: url(../img/img-sprite.png) no-repeat -750px -70px
+                .icon5
+                    background: url(../img/img-sprite.png) no-repeat -820px 0px
+                    &:hover
+                        background: url(../img/img-sprite.png) no-repeat -820px -70px
+                .icon6
+                    background: url(../img/img-sprite.png) no-repeat -890px 0px
+                    &:hover
+                        background: url(../img/img-sprite.png) no-repeat -890px -70px
+.about-us-container
+    display: flex
+    background-color: #e7edf3
+    .about-block
+        &.about-us-left
+            width: 50%
+            img
+                width: 100%
+        &.about-us-right
+            width: 50%
+            background-color: $bgColorOrange
+            .about-us-content
+                margin: 90px 70px
+                color: #ffffff
+                h3
+                    font-family: "Gotham Black Regular"
+                    font-size: 30px
+                    font-weight: 400
+                    text-transform: uppercase
+                    letter-spacing: -0.75px
+                p
+                    font-size: 1em
+                    line-height: 24px
+                    margin: 28px 0 33px 0
+                a
+                    text-decoration: none
+                    color: #fff
+                    padding: 17px 33px
+                    border: 1px solid #e7ad48
+                    &:hover
+                        @include hov
+                    &:not(:hover)
+                        transition: 1s
+.prices-container
+    background-color: #e7edf3
+    .price-content
+        padding: 6em 0
+        margin: 0 auto
+        .price-title
+            text-align: center
+            h2
+                @include h2style
+                color: #394b50
+            p
+                color: #394b50
+                font-family: Lato
+                font-size: 18px
+        .plans
+            display: flex
+            align-items: center
+            justify-content: space-around
+            padding: 50px 0
+            .plan-card
+                padding: 4em 2em 5em 2em
+                border: 1px solid #ccd5df
+                background-color: #ffffff
+                text-align: center
+                font-family: Lato
+                h3
+                    text-transform: uppercase
+                    font-weight: 300
+                    font-size: 25px
+                    color: #818b95
+                    margin-bottom: 0.8em
+                h4
+                    color: #ffbb42
+                    font-size: 60px
+                    font-weight: 700
+                    span
+                        font-size: 0.7em
+                        vertical-align: top
+                p
+                    color: #818b95
+                    font-size: 20px
+                    line-height: 22px
+                ul
+                    margin: 2.5em
+                    text-transform: uppercase
+                    color: #b5bbc1;
+                    li
+                        list-style: none
+                        line-height: 40px
+                        font-size: 1em
+                        border-top: 1px solid #e2e9f0
+                a
+                    font-size: 14px
+                    text-transform: uppercase
+                    border-radius: 5px
+                    background-color: $bgColorOrange
+                    text-decoration: none
+                    color: #fff
+                    padding: 15px 30px
+                    border: 1px solid #e7ad48
+                    &:hover
+                        @include hov
+                    &:not(:hover)
+                        transition: 1s
+                &:hover
+                    background-color: #709dca
+                    transition: 1s
+                    cursor: pointer
+                    h3, h4
+                        color: #fff
+                &:not(:hover)
+                        transition: 1s
+
+.howitworks-container
+    padding: 150px 0
+    color: #394b50
+    font-family: Lato
+    text-align: center
+    .howitworks-title
+        text-align: center
+        font-size: 18px
+        h2
+            @include h2style
+    .steps-block
+        margin: 100px auto 90px auto
+        display: flex
+        justify-content: space-between
+        .step
+            padding: 0 35px
+            text-align: center
+            position: relative
+            .step-text
+                h4
+                    text-transform: uppercase
+                    font-size: 20px
+                    margin: 100px 0 20px 0
+                p
+                    font-size: 13px
+                    line-height: 22px
+                    color: #7b7b7b
+            .arrow1
+                position: absolute
+                top: -35px
+                left: 238px
+            .arrow2
+                position: absolute
+                top: 74px
+                left: 238px
+                img
+                    transform: rotate(180deg)
+            .arrow3
+                position: absolute
+                top: -35px
+                left: 238px
+
+    a
+        text-align: center
+        @include link
+        &:hover
+            @include hov
+        &:not(:hover)
+            transition: 1s
+
+.happy-client
+    padding: 140px 0
+    background-color: $bgColorOrange
+    .clients-title
+        color: #fff
+        text-align: center
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 55px
+        h2
+            @include h2style
+                margin-bottom: 5px
+    .clients-block
+        display: flex
+        justify-content: space-between
+
+        .client
+            background-color: #fff
+            border-radius: 8px
+            margin: 17px
+            height: 241px
+            padding: 35px
+            .client-pic
+                float: left
+                // width: 25%
+                margin-right: 35px
+                img
+                    border-radius: 100px
+                    width: 100%
+            .client-text
+                color: #7b7b7b
+                p
+                    font-size: 13px
+                    margin-bottom: 25px
+                h4
+                    font-family: Lato
+                    text-transform: uppercase
+                    color: #99a9ae
+                    font-weight: 400
+                    span
+                        color: $bgColorOrange
+            &:after
+                content: ''
+                clear: both
+                display: block
+
+.newsletter
+    padding-top: 150px
+    .newsletter-title
+            text-align: center
+            font-size: 16px
+            color: #394b50
+            h2
+                @include h2style
+    .newsletter-form
+        padding: 33px 0
+        .bottom-form
+            max-width: 900px
+            margin: 0 auto
+            text-align: center
+            form
+                padding: 0 20px
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                flex-wrap: wrap
+                .input-wrapper
+                    position: relative
+                    margin: 3px
+                    order: 0
+                    flex-grow: 1
+                    flex-basis: 200px
+                    height: 48px
+                    input, button
+                        width: 100%
+                        height: 100%
+                        border-radius: 5px
+                    input
+                        padding: 7px 25px
+                    &.input-icon
+                        &:before
+                            content: ""
+                            display: block
+                            position: absolute
+                            width: 16px
+                            height: 16px
+                            background-size: cover
+                            top: 50%
+                            margin-top: -7.5px
+                            left: 5px
+                        &.name:before
+                            background-image: url('../img/name_icon.png')
+                        &.email:before
+                            background-image: url('../img/email_icon.png')
+                    button
+                        background-color: $bgColorOrange
+                        text-transform: uppercase
+                        font-size: 14px
+                        font-weight: 400
+                        color: #ffffff
+                        border: none
+                        &:hover
+                            @include hov
+                                font-size: 16px
+                        &:not(:hover)
+                            transition: 1s
+    .map-block
+        background-image: url(../img/map.jpg)
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        min-height: 700px
+        border-bottom: 1px solid #e3e7ec;
+        .address-circle
+            text-align: center
+            position: relative
+            top: 50px
+            .address-info
+                position: relative
+                top: -249px
+                color: #fff
+                font-size: 13px
+                h5
+                    font-size: 15px
+                    text-transform: uppercase
+                    margin-bottom: 10px
+                p
+                    line-height: 28px
+                    &:last-child
+                        color: $bgColorOrange
+
+            .logo
+                position: relative
+                top: -173px
+
+footer
+    .bottom-info
+        padding: 35px 0
+        nav
+            padding: 25px 0 25px 0
+            ul
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                margin-top: 15px
+                li
+                    list-style: none
+                    margin: 5px 3px
+                    @include nav
+                    a
+                        color: #394b50
+        .bottom-phone
+            text-align: center
+            padding-bottom: 25px
+            a
+                color: #394b50
+                position: relative
+                display: inline-block
+                text-decoration: none
+                &:before
+                    background-image: url(../img/phone_icon.png)
+                    background-size: cover
+                    content: ""
+                    display: inline-block
+                    position: relative
+                    right: 9px
+                    top: 2px
+                    width: 16px
+                    height: 16px
+                &:hover
+                    color: $bgColorOrange
+        .social
+            text-align: center
+            display: flex
+            justify-content: center
+            a
+                .social-icon
+                    background: url(../img/img-sprite.png) no-repeat 0px 0px
+                    width: 25px
+                    height: 25px
+                    margin: 0 10px
+
+                    &.twitter
+                        background-position: -75px 0
+                        &:hover
+                            background-position: -75px -25px
+                    &.fb
+                        background-position: -100px 0
+                        &:hover
+                            background-position: -100px -25px
+                    &.google
+                        background-position: -125px 0
+                        &:hover
+                            background-position: -125px -25px
+                    &.linkedin
+                        background-position: -150px 0
+                        &:hover
+                            background-position: -150px -25px
+
+.copyright
+    background-color: $bgColorBlue
+    padding: 10px
+    .copytext
+        text-align: center
+        font-size: 13px
+        margin: 0 auto
+        color: #fff
+        a
+            text-decoration: none
+            color: inherit
+
+#to-top
+    display: none
+    text-decoration: none
+    position: fixed
+    bottom: 10px
+    right: 10px
+    overflow: hidden
+    width: 48px
+    height: 48px
+    border: none
+    text-indent: 100%
+    border-radius: 50%
+    background: url(../img/up-arrow.png) no-repeat 8.8px 13px $bgColorOrange
+
+
+
+
+@media screen and (max-width: 1330px)
+    .about-us-container
+        .about-us-right
+            .about-us-content
+                margin: 50px !important
+                p
+                    font-size: 0.8em !important
+
+@media screen and (max-width: 1150px)
+    .services-content
+        display: flex
+        flex-direction: column
+
+    .howitworks-container
+        .steps-block
+            .step
+
+                .arrow1
+                    top: -35px
+                    left: 238px
+                .arrow2
+                    top: 74px
+                    left: 238px
+                .arrow3
+                    top: -35px
+                    left: 238px
+
+@media screen and (max-width: 1000px)
+    .howitworks-container
+        .steps-block
+            .step
+                .arrow
+                    top: -35px
+                    left: 195px !important
+
+    .clients-block
+        flex-direction: column
+        align-items: center
+        .client-text
+            p
+                font-size: 17px !important
+
+    .banner-slider
+        .slider-tv
+            min-height: 320px !important
+            top: 90px !important
+            left: 180px !important
+
+
+@media screen and (max-width: 800px)
+    header
+        padding: 1em 0
+        .header-container
+            .menu-mob
+                width: 28px
+                height: 28px
+                background: url(../img/nav.png) no-repeat
+                cursor: pointer
+                margin-top: 10px
+                float: right
+            .nav-top
+                width: 100%
+                display: none
+                text-align: center
+                background: #fff
+                padding: 0
+                ul
+                    flex-direction: column
+                    width: 100%
+                    li
+                        display: block
+                        a
+                            display: block
+                            padding: 10px 0px
+
+                            &:hover, &:active
+                                padding: 10px 13px
+                                color: #ffbb42
+    .plans
+        flex-direction: column
+        .plan-card
+            padding: 20px !important
+            margin-top: 15px
+
+
+
+@media screen and (max-width: 768px)
+    .banner
+        padding-bottom: 228px
+
+    .banner-slider
+        .slider-tv
+            min-height: 257px !important;
+            top: 58px !important;
+            left: 147px !important;
+
+    .about-us-container
+        flex-direction: column
+        .about-block
+            width: 100% !important
+            .about-us-content
+                margin: 30px !important
+                text-align: center
+                p
+                    font-size: 0.7em !important
+                    margin-top: 12px
+
+                h3
+                    font-size: 25px
+
+    .howitworks-container
+            .steps-block
+                flex-direction: column
+                padding: 0 50px
+                margin-top: 50px
+                .step
+                    margin: 40px  auto
+                    .arrow
+                        display: none
+                    .step-text
+                        h4
+                            margin-top: 25px
+
+    .clients-block
+        .client-pic
+            width: 25%
+        .client-text
+            p
+                font-size: 13px !important
+
+
+@media screen and (max-width: 480px)
+    .client
+        padding: 17px !important
+        .clients-block
+            .client-text
+                p
+                    font-size: 12px !important
+                    margin-bottom: 12px !important
+
+
+    .banner
+        padding-bottom: 150px
+
+    .banner-slider
+        .slider-tv
+            min-height: 155px !important;
+            top: 81px !important;
+            left: 93px !important;
+

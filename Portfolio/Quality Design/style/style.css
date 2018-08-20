@@ -378,10 +378,26 @@ footer {
         top: 30px;
     }
     .contact-text {
-        display: block;
-        width: 100%;
+        display: inline-block;
         vertical-align: middle;
     }
+
+    .footer-container {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+
+.footer-container .about-us, .tweets, .contacts {
+    width: 100%;
+}
+
+.images {
+    text-align: center;
+}
+
 
     @media screen and (max-width: 420px) {
 
