@@ -16,7 +16,7 @@ function autorization() {
     }
     if (log == 'Username' && pass == 'pass123') {
         document.querySelector('#logout').innerHTML = 'Logout';
-        document.querySelector('.user-login').innerHTML = 'Username';
+        document.querySelector('.user-login').innerHTML = 'User';
         document.querySelector('.container-form').style.display = 'none';
         document.querySelector('.user-login').style.opacity = '1';
     } else {
