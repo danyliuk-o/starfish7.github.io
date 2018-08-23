@@ -7,6 +7,11 @@
     margin: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
 li {
     list-style: none;
     display: flex;
@@ -19,7 +24,7 @@ header {
 }
 
 .header-container {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -64,7 +69,7 @@ main {
 }
 
 .specialize-container {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     text-align: center;
 }
@@ -130,10 +135,12 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .top-container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -152,10 +159,15 @@ main {
 }
 
 .portfolio {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
-    text-align: center;
     min-height: 800px;
+}
+
+.portfolio-cont {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
 }
 
 .portfolio h4 {
@@ -195,15 +207,29 @@ main {
 }
 
 .posts {
-    width: 90%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    /* display: grid;
+grid-template-columns: auto auto auto auto; */
+    text-align: center;
     margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.post {
+    margin: 30px;
 }
 
 
 .brand-slider {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     text-align: center;
     min-height: 500px;
@@ -379,7 +405,6 @@ footer {
     }
     .contact-text {
         display: inline-block;
-        vertical-align: middle;
     }
 
     .footer-container {
@@ -390,14 +415,21 @@ footer {
         flex-direction: column;
     }
 
-.footer-container .about-us, .tweets, .contacts {
-    width: 100%;
-}
+    .footer-container .about-us,
+    .tweets,
+    .contacts {
+        width: 100%;
+    }
 
-.images {
-    text-align: center;
-}
+    .images {
+        text-align: center;
+    }
 
+    @media screen and (max-width: 499px) {
+        .card {
+            margin: 0 auto;
+        }
+    }
 
     @media screen and (max-width: 420px) {
 
@@ -423,11 +455,10 @@ footer {
             justify-content: space-around;
         }
 
-        .posts {
-            width: 90%;
-            display: grid;
-            grid-template-columns: auto;
-            margin: 0 auto;
+
+
+        .post {
+            margin: 15px;
         }
 
         .post img {
