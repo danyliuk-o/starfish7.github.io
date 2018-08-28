@@ -1,7 +1,14 @@
 body {
     margin: 0;
-    background: #3d385a;
+    /* background: #3d385a; */
+    background: url('../img/autumn.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+    height: 100%;
+    overflow: hidden;
 }
+
 
 .section {
     perspective: 1000px;
@@ -25,14 +32,13 @@ body {
 }
 
 .transition {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 img {
     width: 100%;
     height: 100%;
-
 }
 
 .card {
@@ -40,7 +46,6 @@ img {
     height: 200px;
     margin: 10px;
     transition: 0.5s;
-
 }
 
 .card:hover {
@@ -54,77 +59,100 @@ img {
 
 
 .ripple {
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate(0);
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate(0);
 }
+
+
 /* параметры визуального элемента эффекта */
+
 .effekt {
-  display: block;
-  position: absolute;
-  pointer-events: none;
-/* абсолютно круглый */
-  border-radius: 50%;
-/* Увеличение или уменьшение размера элемента */
-  transform: scale(0);
-/* располагаем выше других объектов веб-страницы */
-  z-index:9999;
-/* цвет фона элемента */
-  background: rgba(52, 152, 219,.7);
-/* не прозрачный */
-  opacity: 1;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    /* абсолютно круглый */
+    border-radius: 50%;
+    /* Увеличение или уменьшение размера элемента */
+    transform: scale(0);
+    /* располагаем выше других объектов веб-страницы */
+    z-index: 9999;
+    /* цвет фона элемента */
+    background: rgba(52, 152, 219, .7);
+    /* не прозрачный */
+    opacity: 1;
 }
+
+
 /* имя, длительность и изменение скорости анимации */
+
 .effekt.replay {
-  -webkit-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
-  -o-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
-  animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+    -webkit-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+    -o-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+    animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
 }
 
 
 
 keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-  }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+    }
 }
+
 @-webkit-keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-  }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+    }
 }
+
 @-moz-keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-  }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+    }
 }
+
 @-ms-keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-  }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+    }
 }
+
 @-o-keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-  }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      width: 590px;
+      height: 80vh;
+      margin-left: 50px;
+    }
+
+    .card {
+        width: 130px;
+        height: 150px;
+    }
 }
