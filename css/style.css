@@ -1,11 +1,11 @@
 body {
     margin: 0;
     /* background: #3d385a; */
-    background: url('../img/autumn.jpg') no-repeat;
+    background: url('../img/autumn.jpg') no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
     opacity: 1;
-    height: 125vh;
+    max-height: 100vh;
     overflow: hidden;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    width: 680px;
+    max-width: 680px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +94,7 @@ img {
 
 
 
-keyframes ripple {
+@keyframes ripple {
     100% {
         opacity: 0;
         -webkit-transform: scale(2);
@@ -143,6 +143,8 @@ keyframes ripple {
         transform: scale(2);
     }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .container {
