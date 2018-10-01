@@ -1,7 +1,7 @@
-var gulp        = require('gulp'),
-    sass        = require('gulp-sass'),
-    browserSync = require('browser-sync'),
-    autoprefixer= require('gulp-autoprefixer');
+var gulp         = require('gulp'),
+    sass         = require('gulp-sass'),
+    browserSync  = require('browser-sync'),
+    autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('sass', function() {
