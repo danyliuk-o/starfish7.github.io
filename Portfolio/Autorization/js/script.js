@@ -29,4 +29,3 @@ function autorization() {
 function exit() {
     window.location.reload();
 }
-
