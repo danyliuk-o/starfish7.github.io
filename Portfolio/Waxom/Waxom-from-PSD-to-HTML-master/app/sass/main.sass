@@ -1,0 +1,662 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	min-height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-min-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	min-height: auto
+.arrow-right
+	width: 0
+	min-height 0
+	border-top: 5px solid transparent
+	border-left: 5px solid #c7b299
+	border-bottom: 5px solid transparent
+	margin-top: -18px
+	margin-left: 85px
+header
+	color: white
+	height: 1000px
+	a
+		transition: all 0.3s
+		&:hover
+			text-decoration: none
+			color: #c7b299
+	.owl-carousel
+		position: relative
+		top: 250px
+	.owl-nav
+		.owl-prev
+			background: transparent !important
+			position: relative
+			left: -100%
+			top: -150px
+		.owl-next
+			background: transparent !important
+			position: relative
+			right: -100%
+			top: -150px
+	.owl-dots
+		position: relative
+		top: 200px
+
+.top_header
+	margin-top: 40px
+
+.logo_text
+	margin-top: 15px
+	font-size: 24px
+	font-family: raleway
+
+.top_nav
+	padding-right: 0px
+	margin-left: 30px
+	.about
+		margin-right: 25px
+	.portfolio
+		margin-left: -45px
+		margin-right: 30px
+	.features
+		margin-right: 30px
+	.blog
+		margin-right: 0px
+	.pricing
+		margin-right: 20px
+	.shortcodes
+		margin-right: 50px
+.top_nav
+	margin-top: 20px
+	div
+		margin-right: 15px
+	a
+		color: white
+
+.icons
+	margin-top: 20px
+	div
+		padding-right: 15px
+
+.top_button
+	background-color: #998675
+	color: white
+	width: 170px
+	min-height: 50px
+	border-radius: 5px
+	text-decoration: none
+	border: none
+	font-family: raleway
+	font-weight: bold
+	margin-top: 40px
+	border-bottom: 3px solid #736357
+	transition: all 0.3s
+	&:hover
+		border-bottom: 0px
+.slide
+	text-align: center
+.slide_top
+	font-size: 32
+#opp
+	min-height: 375px
+	background-color:white
+.options
+	margin-top: 50px
+
+.web_title
+	font-family: raleway
+	font-size: 22px
+.web,.dev,.custom,.market
+	text-align: center
+.icons
+	min-height: 50px
+.desc
+	font-family: montserrat
+	font-size: 14px
+	color: #8c8c8c
+	margin-top: 10px
+.bottom_line
+	margin-left: auto
+	margin-right: auto
+	margin-top: 30px
+	width: 70px
+	border-bottom: 2px solid #8c8c8c
+
+#adv
+	min-height: 673px
+	background-color: #fbfaf8
+	.adv_cont
+		text-align: center
+		.title_adv
+			font-family: raleway
+			font-size: 30px
+			margin-top: 60px
+		.desc_adv
+			font-family: montserrat
+			color: #8c8c8c
+			font-size: 16px
+			margin-top: 10px
+
+.browsers
+	margin-top: 13px
+	margin-left: -55px
+	img
+		position: relative
+
+#buy
+	background: linear-gradient(to right, #211b19, #4e3427)
+	min-height: 150px
+	line-min-height: 1.2
+	.top_button
+		font-size: 14px
+		margin-top: 50px
+	.wp_theme
+		font-family: raleway
+		margin-top: 40px
+		font-size: 28px
+		color: white
+		.theme_desc
+			font-size: 18px
+			color: #615855
+			font-family: montserrat
+
+#portfolio
+	.top_button
+		margin-bottom: 40px
+		background-color: white
+	.portfolio_title
+		font-family: raleway
+		color: #555555
+		text-align: center
+		margin-top: 60px
+		font-size: 30px
+	.portfolio_desc
+		font-family: montserrat
+		color: #8c8c8c
+		font-size: 16px
+		text-align: center
+		margin-top: 15px
+	.portfolio_nav
+		margin-top: 40px
+		text-align: center
+		a
+			background-color: #FFF
+			border: 1px solid #ebebeb
+			border-radius: 5px
+			font-size: 14px
+			color: #8c8c8c
+			padding: 5px 20px
+			&:hover
+				background-color: #998675
+				color: white
+				text-decoration: none
+		div
+			display: inline-block
+			margin-right: 10px
+		.active
+				background-color: #998675
+				color: white
+	.portfolio_items
+		margin-top: 30px
+		margin-left: 30px
+		.portfolio-item
+			cursor: pointer
+			transition: all 0.3s
+			max-min-height: 340px
+			margin-top: 30px
+			width: 32%
+			min-height: 340px
+			background-color: #fbfaf8
+			padding: 0
+			margin-right: 1%
+			.portfolio_item_img
+				overflow: hidden
+			img
+				width: 100%
+				-webkit-transform: scale(1)
+				transform: scale(1)
+				-webkit-transition: .3s ease-in-out
+				transition: .3s ease-in-out
+			.arrow-up
+				transition: all 0.3s
+				position: relative
+				width: 0
+				min-height 0
+				border-left: 15px solid transparent
+				border-right: 15px solid transparent
+				border-bottom: 15px solid #fbfaf8
+				margin-top: -15px
+				margin-left: 20px
+			.portfolio_item_title
+				transition: all 0.3s
+				margin-top: 10px
+				margin-left: 20px
+				font-family: raleway
+				font-size: 20px
+				color: #c7b299
+				line-min-height: 1.3
+			.portfolio_item_desc
+				color: #d1d1d1
+				font-size: 14px
+				font-family: montserrat
+			&:hover
+				background-color: #362f2d
+				.portfolio_item_title
+					color: white
+				.portfolio_item_desc
+					color: #c7b299
+				img
+					filter: brightness(50%)
+					-webkit-transform: scale(1.1)
+					transform: scale(1.1)
+				.arrow-up
+					border-bottom: 15px solid #362f2d
+#vid
+	min-height: 695px
+	text-align: center
+	.play
+		margin-top: 210px
+		cursor: pointer
+	.vid_title
+		font-family: raleway
+		font-size: 30px
+		color: white
+		margin-top: 20px
+	.vid_title_desc
+		font-family: montserrat
+		font-size: 16px
+		color: white
+		width: 450px
+		margin-left: auto
+		margin-right: auto
+	.vid_time
+		font-family: montserrat-regular
+		font-size: 15px
+		margin-top: 30px
+		font-weight: bold
+		color: #c7b299
+#mobile
+	min-height: 700px
+	background-color: #FFF
+	.iphone
+		margin-top: 84px
+		text-align: center
+	.mobile_text
+		margin-top: 200px
+		.mobile_title
+			font-family: raleway
+			font-size: 30px
+		.mobile_desc
+			font-family: montserrat
+			font-size: 16px
+			color: #8c8c8c
+			ul
+				margin-top: 30px
+				list-style: none
+				padding-left: 45px
+				li
+					line-min-height: 1.5
+					background: url('../img/list.jpg') no-repeat left
+					padding-left: 50px
+					margin-bottom: 5px
+#stat
+	min-height: 300px
+	background: linear-gradient(to right, #211b19, #4e3427)
+	.stat_body
+		margin-top: 65px
+		margin-left: 150px
+		.stat_item
+			text-align: center
+			margin-right: 30px
+			.bottom_line
+				width: 30px
+				border-bottom: 2px solid #fff
+			.stat_number
+				font-family: montserrat-extralight
+				font-size: 48px
+				color: white
+			.stat_title
+				font-family: montserrat
+				font-size: 14px
+				color: #c7b299
+				text-transform: uppercase
+#posts
+	min-height: 750px
+	background-color: #FFF
+	text-align: center
+	.owl_item
+		transition: all 0.3s
+		min-height: 395px
+		width: 370px
+		border: 2px solid #f8f8f8
+		text-align: left
+		overflow: hidden
+		cursor: pointer
+		&:hover
+			background-color: #362f2d
+			img
+				filter: brightness(50%)
+				transform: scale(1.1)
+			.post_title
+				color: #c7b299
+			.post_desc
+				color: white
+			.date
+				background-color: #a48d72
+				.date_number
+					background-color: #c7b299
+		img
+			transition: all 0.3s
+		.read_more
+			margin-top: 20px
+			margin-left: 30px
+			font-size: montserrat
+			a
+				color: #c7b299
+				text-decoration: none
+		.post_title
+			margin-top: 25px
+			margin-left: 30px
+			font-family: raleway
+			font-size: 20px
+			color: #555555
+		.post_desc
+			margin-left: 30px
+			font-family: montserrat-extralight
+			font-size: 14px
+			color: #8c8c8c
+	.posts_section_title
+		font-family: raleway
+		font-size: 30px
+		margin-top: 70px
+	.posts_section_desc
+		font-family: montserrat
+		font-size: 16px
+		color: #8c8c8c
+		width: 60%
+		margin-left: auto
+		margin-right: auto
+	.posts_items
+		margin-top: 40px
+		.owl-nav
+			.owl-prev
+				position: absolute
+				left: 560px
+				top: 450px
+			.owl-next
+				position: absolute
+				right: 560px
+				top: 450px
+.carousel-inner
+	.item
+		img
+			width: 100%
+			min-height: 220px
+			margin: auto
+.date
+	transition: all 0.3s
+	position: absolute
+	z-index: 1
+	left: 20px
+	top: 20px
+	border-radius: 5px
+	text-align: center
+	background-color: #252525
+	color: white
+	width: 50px
+	min-height: 60px
+	.date_number
+		transition: all 0.3s
+		border-radius: 5px
+		background-color: #363636
+		font-family: montserrat
+		font-size: 24px
+	.date_month
+		font-size: 12px
+		font-family: RobotoRegular
+#sponcors
+	min-height: 485px
+	text-align: center
+	.sponcors_body
+		margin-top: 170px
+#arround_web
+	min-height: 510px
+	background-color: #191919
+	.logo_text
+		color: white
+	.arround_web_body
+		margin-top: 75px
+		margin-left: auto
+		margin-right: auto
+		.widget
+			div
+				margin-right: px
+			.widget_img
+				margin-right: 20px
+				&:hover
+					img
+						transform: scale(1.1)
+						filter: brightness(50%)
+				img
+					transition: all 0.3s
+					min-height: 95px
+					margin-top: 10px
+					width: 180%
+		.recent_posts
+			margin-top: 10px
+			.post
+				border-bottom: 1px solid #252525
+				padding-bottom: 10px
+				font-family: montserrat
+				margin-bottom: 10px
+				cursor: pointer
+				&:hover
+					.post_date
+						color: white
+					.post_text
+						color: #c7b299
+				.post_date
+					transition: all 0.3s
+					font-size: 12px
+					color: #363636
+				.post_text
+					transition: all 0.3s
+					font-size: 14px
+					color: #555555
+		.recent_title
+			font-family: raleway
+			font-size: 24px
+			color: white
+		.aw_desc
+			margin-top: 15px
+			font-family: montserrat
+			font-size: 14px
+			color: #555555
+			.read_more
+				margin-top: 30px
+				&:hover
+					a
+						color: #c7b299
+				.arrow-right
+					color: white
+					margin-top: -16px
+				a
+					transition: all 0.3s
+					color: white
+					text-decoration: none
+footer
+	background-color: #111111
+	color: #555555
+	min-height: 105px
+	.copyright
+		font-family: montserrat
+		font-size: 13px
+	.footer_body
+		margin-top: 40px
+		margin-left: auto
+		margin-right: auto
+	.links
+		margin-top: -2px
+		margin-left: -100px
+		.faq
+			margin-left: -20px
+		a
+			transition: all 0.3s
+			color: #555555
+			text-decoration: none
+			&:hover
+				color: #c7b299
+	.made_by
+		text-align: right
+
+.c-hamburger
+	display: block
+	position: relative
+	overflow: hidden
+	margin-left: -20px
+	margin-top: 5px
+	padding: 0
+	width: 96px
+	height: 96px
+	font-size: 0
+	text-indent: -9999px
+	appearance: none
+	box-shadow: none
+	border-radius: none
+	border: none
+	cursor: pointer
+	transition: background 0.3s
+
+
+.c-hamburger
+	&:focus
+		outline: none
+
+.c-hamburger
+	span
+		display: block
+		position: absolute
+		top: 25px
+		left: 18px
+		right: 18px
+		height: 3px
+		background: white
+
+
+.c-hamburger
+	span
+		&::before
+			position: absolute
+			display: block
+			left: 0
+			width: 100%
+			height: 3px
+			background-color: #fff
+			content: ""
+		&::after
+			position: absolute
+			display: block
+			left: 0
+			width: 100%
+			height: 3px
+			background-color: #fff
+			content: ""
+
+
+.c-hamburger
+	span
+		&::before
+			top: -20px
+
+
+.c-hamburger
+	span
+		&::after
+			bottom: -20px
+
+
+.c-hamburger--htra
+	background-color: transparent
+
+
+.c-hamburger--htra
+	span
+		transition: transform $button-transistion-duration
+
+
+
+.c-hamburger--htra
+	span
+		&::before
+			transform-origin: top left
+			transition: transform $button-transistion-duration, width $button-transistion-duration, top $button-transistion-duration
+
+
+.c-hamburger--htra
+	span
+		&::after
+			transform-origin: bottom left
+			transition: transform $button-transistion-duration, width $button-transistion-duration, bottom $button-transistion-duration
+
+
+.c-hamburger--htra.is-active
+	span
+		transform: rotate(180deg)
+
+
+.c-hamburger--htra.is-active
+	span
+		&::before
+			width: 50%
+		&::after
+			width: 50%
+
+.c-hamburger--htra.is-active
+	span
+		&::before
+			top: -2px
+			transform: translateX(-$bar-thickness) translateY($bar-thickness/2) rotate(-45deg)
+			width: 50%
+
+
+.c-hamburger--htra.is-active
+	span
+		&::after
+			bottom: -2px
+			transform: translateX(-$bar-thickness) translateY(-$bar-thickness/2) rotate(45deg)
+			width: 50%
+
+@import "media" // Всегда в конце
