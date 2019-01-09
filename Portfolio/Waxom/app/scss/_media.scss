@@ -1,0 +1,97 @@
+@media screen and (max-width: 1230px) {
+    .ideas {
+        .ideas__content {
+            .browsers {
+                text-align: center;
+                flex-direction: column;
+                .idea-img {
+                    max-width: 100%;
+                }
+                .idea2 {
+                    position: static;
+                    width: 100%;
+                    text-align: center;
+                }
+                .idea3 {
+                    position: static;
+                    width: 100%;
+                    text-align: center;
+                }
+                .idea1 {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .btn-block {
+                @include btn;
+            }
+        }
+    }
+    .counters {
+        .counters-block {
+            padding: 5% 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .slick-slider {
+        margin-bottom: 50px;
+        .slick-slide {
+            img {
+                margin: 0 auto;
+            }
+        }
+        .slick-next,
+        .slick-prev {
+            top: 105%;
+        }
+        .slick-next {
+            right: 25px;
+        }
+        .slick-prev {
+            left: 25px;
+        }
+    }
+    .visible-lg {
+        display: none;
+    }
+    .m-menu-link {
+        display: block;
+        i {
+            font-size: 2.5rem;
+        }
+    }
+    .close-menu {
+        position: fixed;
+        right: 60px;
+        top: 1rem;
+        margin: 0;
+        font-size: 5rem;
+        font-weight: 900;
+        cursor: pointer;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .counters {
+        .counters-block {
+            flex-direction: column;
+            .count {
+                margin: 20px 0;
+                .sum {
+                    font-size: 40px
+                }
+            }
+        }
+    }
+    .copyright__block_content {
+        flex-direction: column;
+        ul {
+            padding: 0;
+        }
+    }
+}

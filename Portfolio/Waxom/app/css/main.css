@@ -49,6 +49,8 @@ a {
     display: flex; }
     .header nav .menu ul li a {
       padding: 0 .5rem; }
+  .header nav .menu_icons img {
+    margin: 0 5px; }
   .header .header__slider {
     color: #fff;
     position: relative;
@@ -304,67 +306,66 @@ a {
         border: 2px solid #ffffff;
         width: 20px; }
 
-.posts .posts_title p {
-  margin: 30px 0; }
-
-.posts .posts_slider .slick-arrow {
-  cursor: pointer; }
-  .posts .posts_slider .slick-arrow::before {
-    color: #000; }
-
-.posts .posts_slider .slick-dots li button::before {
-  font-size: 15px;
-  height: 45px;
-  color: #ffffff; }
-
-.posts .posts_slider .post {
-  position: relative;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  min-height: 395px;
-  width: 370px;
-  border: 2px solid #f8f8f8;
-  text-align: left;
-  overflow: hidden;
-  cursor: pointer; }
-  .posts .posts_slider .post .slick-dots {
-    bottom: 20px; }
-  .posts .posts_slider .post .date {
+.posts {
+  padding: 50px 0; }
+  .posts .posts_title p {
+    margin: 30px 0; }
+  .posts .posts_slider .slick-arrow {
+    cursor: pointer; }
+    .posts .posts_slider .slick-arrow::before {
+      color: #000; }
+  .posts .posts_slider .slick-dots li button::before {
+    font-size: 15px;
+    height: 45px;
+    color: #ffffff; }
+  .posts .posts_slider .post {
+    padding: 7px;
+    position: relative;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    position: absolute;
-    z-index: 1;
-    left: 20px;
-    top: 20px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    text-align: center;
-    background-color: #252525;
-    color: #fff;
-    width: 50px;
-    min-height: 60px; }
-    .posts .posts_slider .post .date .date-num {
-      -webkit-transition: all .5s;
-      -o-transition: all .5s;
-      transition: all .5s;
+    min-height: 395px;
+    width: 370px;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer; }
+    .posts .posts_slider .post .slick-dots {
+      bottom: 20px; }
+    .posts .posts_slider .post .date {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      position: absolute;
+      z-index: 1;
+      left: 20px;
+      top: 20px;
       -webkit-border-radius: 5px;
               border-radius: 5px;
-      background-color: #363636;
-      font-family: montserrat;
-      font-size: 24px; }
-    .posts .posts_slider .post .date .date-month {
-      font-size: 12px;
-      font-family: RobotoRegular; }
-  .posts .posts_slider .post .post_text {
-    text-align-last: left; }
-    .posts .posts_slider .post .post_text h4 {
-      margin-top: 25px;
-      font-family: raleway;
-      font-size: 20px;
-      color: #555;
-      text-align: inherit; }
+      text-align: center;
+      background-color: #252525;
+      color: #fff;
+      width: 50px;
+      min-height: 60px; }
+      .posts .posts_slider .post .date .date-num {
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        background-color: #363636;
+        font-family: montserrat;
+        font-size: 24px; }
+      .posts .posts_slider .post .date .date-month {
+        font-size: 12px;
+        font-family: RobotoRegular; }
+    .posts .posts_slider .post .post_text {
+      text-align-last: left; }
+      .posts .posts_slider .post .post_text h4 {
+        margin-top: 25px;
+        font-family: raleway;
+        font-size: 20px;
+        color: #555;
+        text-align: inherit; }
 
 .partners {
   background: url(../img/client_bg.jpg) no-repeat center;
@@ -503,19 +504,19 @@ a {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .footer .copyright__block .copyright__block_content ul {
-        margin-left: auto;
+      .footer .copyright__block .copyright__block_content .copy_links {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; }
-        .footer .copyright__block .copyright__block_content ul li {
+        display: flex;
+        margin: auto; }
+        .footer .copyright__block .copyright__block_content .copy_links li {
           margin: 7px;
           -webkit-transition: .5;
           -o-transition: .5;
           transition: .5;
           cursor: pointer; }
-          .footer .copyright__block .copyright__block_content ul li:hover {
+          .footer .copyright__block .copyright__block_content .copy_links li:hover {
             color: #c7b299; }
 
 .m-menu {

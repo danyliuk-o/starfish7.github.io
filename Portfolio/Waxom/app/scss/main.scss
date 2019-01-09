@@ -1,35 +1,4 @@
-@mixin btn {
-    text-transform: uppercase;
-    background-color: #998675;
-    padding: 17px 40px;
-    font-family: Raleway;
-    transition: all ease 0.1s;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: #fff;
-    margin: 5px;
-    &:active {
-        padding: 20px 40px 14px 40px;
-        box-shadow: 0 0 0 0.2rem #ffb90040;
-    }
-    &:focus {
-        box-shadow: 0 0 0 0.2rem #ffb90040;
-    }
-}
-
-@mixin logo {
-    display: flex;
-    align-items: center;
-    font-family: Raleway;
-    font-size: 34px;
-    font-weight: 400;
-    p {
-        font-size: 34px;
-        color: #fff;
-        font-family: Raleway;
-    }
-}
-
+@import 'mixins';
 * {
     font-family: Montserrat, sans-sarif;
     font-size: 14px;
@@ -41,12 +10,6 @@ body {
     color: #8c8c8c;
 }
 
-// ul,
-// li,
-// p {
-//     margin: 0;
-//     padding: 0;
-// }
 h1,
 h2,
 h3 {
@@ -93,6 +56,11 @@ a {
                         padding: 0 .5rem;
                     }
                 }
+            }
+        }
+        .menu_icons {
+            img {
+                margin: 0 5px;
             }
         }
     }
@@ -352,6 +320,7 @@ a {
 }
 
 .posts {
+    padding: 50px 0;
     .posts_title {
         p {
             margin: 30px 0;
@@ -376,11 +345,12 @@ a {
             }
         }
         .post {
+            padding: 7px;
             position: relative;
             transition: all .3s;
             min-height: 395px;
             width: 370px;
-            border: 2px solid #f8f8f8;
+            // border: 2px solid #f8f8f8;
             text-align: left;
             overflow: hidden;
             cursor: pointer;
@@ -551,9 +521,9 @@ a {
         .copyright__block_content {
             display: flex;
             align-items: center;
-            ul {
-                margin-left: auto;
+            .copy_links {
                 display: flex;
+                margin: auto;
                 li {
                     margin: 7px;
                     transition: .5;
@@ -595,100 +565,4 @@ a {
     display: none;
 }
 
-@media screen and (max-width: 1230px) {
-    .ideas {
-        .ideas__content {
-            .browsers {
-                text-align: center;
-                flex-direction: column;
-                .idea-img {
-                    max-width: 100%;
-                }
-                .idea2 {
-                    position: static;
-                    width: 100%;
-                    text-align: center;
-                }
-                .idea3 {
-                    position: static;
-                    width: 100%;
-                    text-align: center;
-                }
-                .idea1 {
-                    position: static;
-                    width: 100%;
-                }
-            }
-            .btn-block {
-                @include btn;
-            }
-        }
-    }
-    .counters {
-        .counters-block {
-            padding: 5% 10%;
-        }
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .slick-slider {
-        margin-bottom: 50px;
-        .slick-slide {
-            img {
-                margin: 0 auto;
-            }
-        }
-        .slick-next,
-        .slick-prev {
-            top: 105%;
-        }
-        .slick-next {
-            right: 25px;
-        }
-        .slick-prev {
-            left: 25px;
-        }
-    }
-    .visible-lg {
-        display: none;
-    }
-    .m-menu-link {
-        display: block;
-        i {
-            font-size: 2.5rem;
-        }
-    }
-    .close-menu {
-        position: fixed;
-        right: 60px;
-        top: 1rem;
-        margin: 0;
-        font-size: 5rem;
-        font-weight: 900;
-        cursor: pointer;
-        &:hover {
-            color: #ffffff;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .counters {
-        .counters-block {
-            flex-direction: column;
-            .count {
-                margin: 20px 0;
-                .sum {
-                    font-size: 40px
-                }
-            }
-        }
-    }
-    .copyright__block_content {
-        flex-direction: column;
-        ul {
-            padding: 0;
-        }
-    }
-}
+@import "media";

@@ -1,0 +1,31 @@
+@mixin btn {
+    text-transform: uppercase;
+    background-color: #998675;
+    padding: 17px 40px;
+    font-family: Raleway;
+    transition: all ease 0.1s;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: #fff;
+    margin: 5px;
+    &:active {
+        padding: 20px 40px 14px 40px;
+        box-shadow: 0 0 0 0.2rem #ffb90040;
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.2rem #ffb90040;
+    }
+}
+
+@mixin logo {
+    display: flex;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: 400;
+    p {
+        font-size: 34px;
+        color: #fff;
+        font-family: Raleway;
+    }
+}
