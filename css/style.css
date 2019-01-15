@@ -27,7 +27,7 @@ body {
 }
 
 .container-origin {
-    transform: rotate(0%);
+    transform: rotate(0);
 }
 
 .transition {

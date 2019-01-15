@@ -1,4 +1,4 @@
-$('.card').on('click', () => {
+$('.card').on('click', function() {
     $('.container').toggleClass('container-origin');
 });
 
@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     $("body").fadeIn(1500);
 
-    $("a.transition").click(e => {
-        e.preventDefault();
+    $("a.transition").click(function(event) {
+        event.preventDefault();
         linkLocation = this.href;
         $("body").fadeOut(1000, redirectPage);
     });
