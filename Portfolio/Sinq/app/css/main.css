@@ -818,7 +818,7 @@ p {
   .to-top:hover {
     color: #C19A79; }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1560px) {
   html {
     font-size: 15px; }
   body {
@@ -1114,7 +1114,9 @@ p {
         -ms-flex-align: center;
             align-items: center; }
     .language-popup .reg-popup-content ul li {
-      margin: 20px 0; } }
+      margin: 20px 0; }
+  .language-popup .reg-popup-content p {
+    margin: 0; } }
 
 @media screen and (max-width: 600px) {
   .header .header-block .header-logo .logo {
