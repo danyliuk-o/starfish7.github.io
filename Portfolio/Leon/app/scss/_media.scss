@@ -1,0 +1,234 @@
+@media screen and (max-width: 1564px) {
+  .main {
+    width: 100%;
+  }
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+  .main {
+    .banner {
+      &_back {
+        transform: translateY(327px);
+        .b-ben_block {
+          transform: translate(276px, -12px);
+        }
+        .flag_block {
+          transform: translate(145px, -40px);
+          z-index: 10;
+        }
+        .bridge_block {
+          transform: translate(-265px, 0);
+        }
+      }
+      &_face {
+        transform: translate(15px, -107px);
+        .alagin_block {
+          p {
+            font-size: 11px;
+
+            width: 200px;
+            left: 100px;
+          }
+        }
+        .kane_block {
+          transform: translate(112px, 87px);
+        }
+        .salah_block {
+          transform: translate(415px, 87px);
+        }
+        .hazard_block {
+          transform: translate(-151px, 42px);
+        }
+        .aguero_block {
+          transform: translate(-439px, 90px);
+        }
+      }
+      &_text {
+        bottom: 270px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    &_content {
+      justify-content: center;
+      position: relative;
+      &_right {
+        position: absolute;
+        top: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 13px;
+  }
+
+  .banner_img_block {
+    img {
+      transform: scale(0.6);
+    }
+  }
+  .main {
+    position: relative;
+    box-shadow: 19px -79px 87px -8px $bg inset;
+    &::after {
+      content: "";
+      position: absolute;
+    }
+    .banner {
+      &_back {
+        transform: translateY(460px);
+        .b-ben_block {
+          transform: translate(394px, -146px);
+        }
+        .flag_block {
+          transform: translate(145px, -40px);
+          z-index: 10;
+        }
+        .bridge_block {
+          transform: translate(-390px, -109px);
+        }
+      }
+      &_face {
+        transform: translate(3px, -29px);
+        .alagin_block {
+          p {
+            font-size: 11px;
+            z-index: 1000;
+            width: 200px;
+            left: 100px;
+          }
+        }
+        .kane_block {
+          transform: translate(203px, 87px);
+        }
+        .salah_block {
+          transform: translate(534px, 87px);
+        }
+        .hazard_block {
+          transform: translate(-276px, 42px);
+        }
+        .aguero_block {
+          transform: translate(-600px, 90px);
+        }
+      }
+      &_text {
+        bottom: 196px;
+        .rets {
+          padding: 9px 23px;
+          .rets_btn,
+          .rets_text {
+            display: block;
+          }
+          .rets_btn {
+            padding: 18px 35px;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 11px;
+  }
+  .banner_img_block {
+    img {
+      transform: scale(0.5);
+    }
+  }
+  .header {
+    &_content {
+      &_right {
+        flex-direction: column;
+        .right_boxing {
+          transform: skewX(-10deg);
+
+          & > * {
+            transform: skewX(10deg);
+          }
+          &::before {
+            display: none;
+          }
+        }
+        .right_timer {
+          transform: skewX(-10deg);
+          position: relative;
+          right: 9px;
+          & > div {
+            border: none;
+          }
+          & > * {
+            transform: skewX(10deg);
+          }
+        }
+      }
+    }
+  }
+  .main {
+    box-shadow: inset 11px -177px 93px 8px rgba(12, 16, 19, 1);
+    .banner {
+      &_back {
+        .b-ben_block {
+          transform: translate(449px, -146px);
+        }
+        .flag_block {
+          transform: translate(145px, -40px);
+          z-index: 10;
+        }
+        .bridge_block {
+          transform: translate(-422px, -101px);
+        }
+      }
+      &_face {
+        transform: translate(3px, -42px);
+        .kane_block {
+          transform: translate(239px, 87px);
+        }
+        .salah_block {
+          transform: translate(604px, 87px);
+        }
+        .hazard_block {
+          transform: translate(-292px, 42px);
+        }
+        .aguero_block {
+          transform: translate(-633px, 90px);
+        }
+        .alagin_block {
+          p {
+            // position: relative;
+            
+          }
+        }
+      }
+      &_text {
+        box-shadow: 0px -23px 96px 33px rgba(12, 16, 19, 1);
+        bottom: 207px;
+        .prize {
+          h2 {
+            background-color: rgba(12, 16, 19, 0.9);
+          }
+        }
+        
+      }
+    }
+  }
+}
