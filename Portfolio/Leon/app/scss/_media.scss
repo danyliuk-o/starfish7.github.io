@@ -77,6 +77,10 @@
 @media screen and (max-width: 980px) {
   html {
     font-size: 13px;
+    overflow: scroll;
+  }
+  body {
+    overflow: scroll;
   }
 
   .banner_img_block {
