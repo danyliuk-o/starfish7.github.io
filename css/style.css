@@ -139,6 +139,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow: scroll;
+  }
   .container {
     transform: rotate(0);
   }
