@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+// @mixin choiceSquare {
+//   width: 40px;
+//   height: 40px;
+//   transform: rotate(45deg);
+//   // margin: 40px;
+//   position: relative;
+//   &::after {
+//     position: absolute;
+//     left: 50%;
+//   }
+// }
+
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
 @mixin overlay {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -79,7 +94,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .green-btn {
+=======
+.download-btn {
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   text-transform: uppercase;
   color: $whiteColor !important;
   padding: 15px 42px;
@@ -183,6 +202,7 @@ h2 {
       padding: 40px;
       box-shadow: 0 2px 29px rgba(53, 175, 1, 0.2);
       background-color: $whiteColor;
+<<<<<<< HEAD
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       &:hover {
@@ -190,6 +210,8 @@ h2 {
         transition: all 0.5s ease-in-out;
         box-shadow: 0 25px 25px rgba(52, 143, 1, 0.2);
       }
+=======
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
       img {
         position: relative;
         left: 10px;
@@ -247,6 +269,7 @@ h2 {
     }
   }
 }
+<<<<<<< HEAD
 
 .progress {
   padding: 120px 0;
@@ -268,6 +291,8 @@ h2 {
     }
   }
 }
+=======
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
 .for-you {
   background-color: #f7f7f7;
   padding: 145px 0;
@@ -284,6 +309,7 @@ h2 {
   &__list {
     margin-bottom: 45px;
     li {
+<<<<<<< HEAD
       transition: all 0.8s ease-in-out;
       &:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
@@ -297,6 +323,8 @@ h2 {
           }
         }
       }
+=======
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
       .for-you__list-block {
         padding: 32px 5px;
         margin-bottom: 7px;
@@ -305,6 +333,7 @@ h2 {
         padding: 32px 0 35px 10%;
         display: flex;
         align-items: center;
+<<<<<<< HEAD
         cursor: pointer;
         .green-dot {
           min-width: 14px;
@@ -313,6 +342,16 @@ h2 {
           margin-right: 22px;
           transform: rotate(45deg);
           transition: all 0.8s ease-in-out;
+=======
+        .green-dot {
+          min-width: 14px;
+          min-height: 14px;
+
+          background-color: $greenColor;
+
+          margin-right: 22px;
+          transform: rotate(45deg);
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
         }
       }
     }
@@ -350,6 +389,7 @@ h2 {
     position: relative;
     height: 220px;
     padding: 10px;
+<<<<<<< HEAD
     transition: all 0.8s ease-in-out;
     cursor: pointer;
     &:hover {
@@ -359,6 +399,8 @@ h2 {
         font-weight: 900;
       }
     }
+=======
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
     @for $n from 1 to 5 {
       .number-#{$n} {
         &::after {
@@ -470,6 +512,7 @@ h2 {
     .choice-list {
       .close__list-block {
         box-shadow: 0 2px 21px rgba(238, 8, 8, 0.1);
+<<<<<<< HEAD
         cursor: pointer;
         transition: all 0.8s ease-in-out;
         &:hover {
@@ -498,6 +541,11 @@ h2 {
             transition: all 0.8s ease-in-out;
           }
         }
+=======
+      }
+      .start__list-block {
+        box-shadow: 0 2px 21px rgba(53, 175, 1, 0.1);
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
       }
       &-block {
         padding: 32px 10%;
@@ -511,7 +559,10 @@ h2 {
         .red-dot,
         .green-dot {
           margin-right: 20px;
+<<<<<<< HEAD
           transition: all 0.8s ease-in-out;
+=======
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
         }
         p {
           display: inline-block;
@@ -551,6 +602,10 @@ h2 {
 }
 .footer {
   position: relative;
+<<<<<<< HEAD
+=======
+  // bottom: 0;
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   z-index: 10;
   width: 100%;
   background: url(../img/footer_bg.jpg) no-repeat center;
@@ -644,6 +699,7 @@ h2 {
       display: flex;
       .modal-form {
         display: flex;
+<<<<<<< HEAD
         position: relative;
         z-index: 9999;
         width: 60%;
@@ -651,6 +707,12 @@ h2 {
           display: none;
       }
        
+=======
+        
+        position: relative;
+        z-index: 9999;
+        width: 60%;
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
         .reg-title {
           font-size: 1.4rem;
           text-transform: uppercase;
@@ -671,11 +733,24 @@ h2 {
           padding: 19px 30px;
           font-family: "Century Gothic";
           font-size: 1rem;
+<<<<<<< HEAD
+=======
+          
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
           width: 100%;
           outline: none;
           border: 1px solid #d1d1d1;
           box-shadow: 6px 8px 24px rgba(30, 30, 30, 0.15);
+<<<<<<< HEAD
           
+=======
+          &:valid {
+            border-color: $greenColor;
+          }
+          &:invalid {
+            border-color: red;
+          }
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
           &::placeholder {
             opacity: 0.7;
             text-indent: 0px;
@@ -723,6 +798,10 @@ h2 {
     border-radius: 2px;
     text-align: center;
     position: relative;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
     &-close {
       position: absolute;
       font-size: 5rem;
@@ -741,6 +820,10 @@ h2 {
 
 .modal-confidentiality {
   @include overlay;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   &__window {
     background: $whiteColor;
     background-size: cover;
@@ -762,6 +845,10 @@ h2 {
 }
 .modal-conditions {
   @include overlay;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   &__window {
     background: $whiteColor;
     background-size: cover;
@@ -773,6 +860,10 @@ h2 {
     border-radius: 2px;
     text-align: center;
     position: relative;
+<<<<<<< HEAD
+=======
+    overflow-y: scroll;
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
     overflow-x: hidden;
     &_block {
       .close-text-btn {
@@ -781,6 +872,7 @@ h2 {
     }
   }
 }
+<<<<<<< HEAD
 .uForm__error-msg {
   display: none;
   color: red;
@@ -807,3 +899,5 @@ h2 {
 
   display: none;
 }
+=======
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466

@@ -1,12 +1,19 @@
 $(document).ready(function() {
+<<<<<<< HEAD
   const modal = $(".modal");
   const closeModal = $(".modal__window-close");
   const downloadBtn = $(".download-btn");
   setTimeout(function() {
+=======
+  setTimeout(function() {
+    const modal = $(".modal");
+
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
     modal
       .css({ display: "flex" })
       .hide()
       .fadeIn(800);
+<<<<<<< HEAD
   }, 30000);
 
   closeModal.on("click", function() {
@@ -22,6 +29,23 @@ $(document).ready(function() {
 
 new WOW().init();
 
+=======
+  }, 1000);
+});
+
+$(() => {
+  const modal = $(".modal");
+  const closeModal = $(".modal__window-close");
+  const modalBtn = $(".modal-btn");
+  modalBtn.on("click", () => {
+    return false;
+  });
+  closeModal.on("click", function() {
+    modal.hide(800);
+  });
+});
+
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
 $(() => {
   const modal = $(".modal-video");
   const closeModalVideo = $(".modal-video__window-close");
@@ -33,11 +57,17 @@ $(() => {
       .fadeIn(800);
   });
   closeModalVideo.on("click", () => {
+<<<<<<< HEAD
     modal.hide(800);
     let $frame = $("#main-video");
     let videoSrc = $frame.attr("src");
     $frame.attr("src", "");
     $frame.attr("src", videoSrc);
+=======
+    modal.hide(800, () => {
+      modal.remove();
+    });
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   });
 });
 
@@ -56,10 +86,17 @@ $(() => {
   });
   closeModalConfidentiality.on("click", () => {
     modal.fadeOut(800);
+<<<<<<< HEAD
     body.css("overflow", "auto");
   });
   modal.click(function(e) {
     if (e.target == this) closeModalConfidentiality.trigger("click");
+=======
+    body.css("overflow", "scroll");
+  });
+    modal.click(function(e) {
+    if (e.target == this) closeModalConfidentiality.trigger('click');
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   });
 
   $("modal").on("click", e => {
@@ -82,11 +119,19 @@ $(() => {
   });
   closeModalConditions.on("click", () => {
     modal.fadeOut(800);
+<<<<<<< HEAD
     body.css("overflow", "auto");
   });
 
   modal.click(function(e) {
     if (e.target == this) closeModalConditions.trigger("click");
+=======
+    body.css("overflow", "scroll");
+  });
+  
+  modal.click(function(e) {
+    if (e.target == this) closeModalConditions.trigger('click');
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
   });
 });
 
@@ -125,6 +170,7 @@ $(() => {
   });
 });
 
+<<<<<<< HEAD
 let a = 0;
 $(window).scroll(function() {
 
@@ -152,3 +198,13 @@ $(window).scroll(function() {
     a = 1;
   }
 });
+=======
+// function showDialog() {
+//   x.showModal();
+// }
+
+// function closeDialog() {
+//   x.close();
+//   document.getElementsByTagName("body")[0].style.overflow = "scroll";
+// }
+>>>>>>> afd039f510130d9f0894dd901239c1be33389466
