@@ -1,0 +1,51 @@
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+      
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+      &:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        border: 1px solid $greenColor;
+        display: inline-block;
+        margin-right: 22px;
+        transform: rotate(45deg);
+        
+      }
+    }
+  }
+}
+
+.my-dots li.slick-active button:before {
+  opacity: .75;
+  background-color: $greenColor;
+}

@@ -1,0 +1,193 @@
+@media screen and (max-width: 1199px) {
+  .header__info .info-block {
+    margin-right: 20px;
+  }
+
+  .dinero__mobile .circle-pic {
+    width: 455px;
+    top: 279px;
+  }
+  .banner .slider-container {
+    left: calc(50% - 480px);
+  }
+  .banner {
+    height: 500px;
+    h1 {
+      font-size: 3.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .m-center {
+    text-align: center;
+  }
+  .footer {
+    hr {
+      display: inline-block;
+    }
+    &-right {
+      h4,
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .banner .slider-container {
+    left: calc(50% - 360px);
+  }
+  html {
+    font-size: 14px;
+  }
+  .header__contacts,
+  .header__info,
+  .header__phones {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .online__card {
+    padding: 23px;
+    height: auto;
+    &-img {
+      margin: 0 auto 42px auto;
+    }
+  }
+  .dinero {
+    height: 700px;
+  }
+  .dinero__mobile .circle-pic {
+    top: 59px;
+    right: 17%;
+  }
+
+  .questions {
+    padding: 430px 0 146px 0;
+  }
+  .footer h4 {
+    font-size: 1.5rem;
+  }
+
+  .footer__phones {
+    text-align: center;
+  }
+  .footer__phones .phone .phone-link span {
+    margin-right: 0;
+  }
+  .fb-block {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dinero__text a {
+    display: block;
+    margin: 0 auto;
+    width: 287px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .dinero__mobile {
+    text-align: center;
+  }
+  .dinero__mobile .circle-pic {
+    right: 0%;
+    top: 0px;
+    width: 100%;
+  }
+  .banner {
+    height: 486px;
+  }
+  .banner .slider-container {
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .dinero__mobile .circle-pic {
+    position: relative;
+  }
+  .dinero__mobile .mobile-pic {
+    width: 250px;
+  }
+  .banner__slider .sl-img {
+    height: auto;
+    width: 350px;
+    // top: 50px;
+  }
+  .sl-img {
+    margin: 0 auto;
+  }
+
+  .banner__slider .sl-title {
+    top: 0;
+    text-align: center;
+  }
+
+  .banner__slider .sl-title p {
+    line-height: 45px;
+    font-size: 1.5rem;
+  }
+  .advantages {
+    padding: 95px 0;
+  }
+  .online {
+    padding: 85px 0 123px 0;
+  }
+  .online__title {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .dinero__tex_title {
+    font-size: 2.5rem;
+  }
+  .questions {
+    padding: 430px 0 40px 0;
+  }
+  
+  .footer__phones {
+    text-align: center;
+  }
+  .footer-get {
+    margin-bottom: 20px;
+  }
+  .footer-link {
+    color: #fff;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  .banner__slider .sl-img {
+    width: 310px;
+  }
+  .banner {
+    height: 433px;
+    h1 {
+      margin-bottom: 0;
+      font-size: 3.1rem;
+    }
+    .banner__slider .sl-title p {
+      line-height: 45px;
+      font-size: 1.1rem;
+    }
+  }
+  .start {
+    background-size: cover;
+  }
+  
+  .footer h4 {
+    font-size: 1rem;
+  }
+  .start__button a {
+    padding: 15px 0;
+    width: 226px;
+  }
+
+  .advantages__title h2 {
+    font-size: 2.5rem;
+  }
+}

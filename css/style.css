@@ -1,3 +1,7 @@
+html {
+  overflow-y: hidden; 
+}
+
 body {
   margin: 0;
   /* background: #3d385a; */
@@ -14,7 +18,7 @@ body {
 }
 
 .container {
-  max-width: 680px;
+  max-width: 975px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -138,11 +142,15 @@ img {
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .container {
+    transform: rotate(0);
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow: scroll;
   }
-  .container {
-    transform: rotate(0);
-  }
+  
 }

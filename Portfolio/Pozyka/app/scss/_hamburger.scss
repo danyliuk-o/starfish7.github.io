@@ -1,0 +1,144 @@
+.hamburger {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: none;
+  border: none;
+  position: relative;
+  &:hover {
+    // box-shadow: 0 0 25px rgb(56,100,38);
+  }
+}
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 27%;
+  margin-left: -9px;
+  width: 35px;
+  height: 3px;
+  background-color: #222;
+}
+.hamburger span::before,
+.hamburger span::after {
+  content: "";
+}
+.hamburger span::before {
+  transform: translateY(-7px);
+}
+.hamburger span::after {
+  transform: translateY(7px);
+}
+
+.m-menu {
+  position: relative;
+  &-contacts {
+    text-align: center;
+    .m-menu-email {
+      img {
+        margin-right: 13px;
+      }
+      a {
+        text-decoration: none;
+        color: #333333;
+        font-size: 1rem;
+      }
+    }
+    .m-menu__phones {
+      margin: 15px 0;
+      display: inline-block;
+      text-align: left;
+      .phone {
+        img {
+          margin-right: 10px;
+        }
+        .phone-link {
+          color: #333333;
+          transition: 0.5s;
+          text-decoration: none;
+          span {
+            font-size: 1rem;
+            color: #333333;
+          }
+          &:hover {
+            span {
+              color: $linkColor;
+              transition: 0.5s;
+            }
+          }
+          span {
+            margin-right: 10px;
+            font-size: 1.125rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  
+}
+
+.m-menu-fb-text {
+  color: #333333 !important;
+}
+
+.m-menu-bottom {
+  .m-menu-get {
+    background-image: linear-gradient(to left, #22cefb 0%, #03aeed 100%);
+    box-shadow: 0 5px 29px rgba(45, 45, 45, 0.15);
+    border-radius: 4px;
+    background-color: #3f99ff;
+    font-weight: 700;
+    width: 250px;
+    padding: 15px;
+    color: #ffffff !important;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  ul {
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: 14px;
+      }
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+// .m-menu__active {
+//   transform: translateX(0);
+// }
+
+.close-m-menu {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  border-radius: 50%;
+  span {
+    font-size: 2rem;
+  }
+}
+
+.modal-header {
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 1rem;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: 700;
+}

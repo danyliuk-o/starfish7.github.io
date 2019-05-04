@@ -1,0 +1,119 @@
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+  .visible-lg {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .banner__question {
+    text-align: center;
+  }
+  .banner__question_line {
+    margin: 14px auto;
+  }
+
+  .banner .question-button {
+    width: 50%;
+  }
+  .banner
+    .chat__conversation_message
+    .message-content-header
+    .content-header-date {
+    left: 0;
+  }
+  .login-block,
+  .password-block,
+  .form-reg-btn {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .banner .registration .form-reg .remember-me-block {
+    justify-content: center;
+  }
+  .banner .registration .form-reg .forgot-block {
+    text-align: center;
+  }
+  .banner .chat {
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .connect .connect-left {
+      text-align: center;
+  }
+
+  .connect-left__title .connect-left-line {
+      margin: 0 auto;
+  }
+  .connect-left__text-par {
+      max-width: 100%;
+  }
+  .connect-left__btn {
+      width: 100%;
+  }
+  .connect-right__title {
+      text-align: center;
+  }
+  .connect-right__title .connect-right-line {
+      margin: 0 auto;
+  }
+  .connect-right__form .connect-right__btn {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner .registration__header-title span {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+  .header__content-social {
+    display: none;
+  }
+
+  .header__content-user img {
+    margin-right: 5px;
+  }
+  .header__content-user .user-name-arrow {
+    margin-left: 5px;
+  }
+  .banner .chat__conversation_message .message-photo {
+    display: none;
+  }
+  .banner
+    .chat__conversation_message
+    .message-content-header
+    .content-header-title
+    .m-ava {
+    display: flex;
+  }
+  .banner .chat__form {
+    padding: 32px;
+    &_bottom {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .banner .chat__form_bottom-emoji {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header__content-user .user-name {
+    display: none;
+  }
+  .m-menu {
+      a {
+          font-size: 24px;
+      }
+  }
+}
